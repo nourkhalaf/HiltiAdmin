@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/brand_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="@string/brands"
+        android:textColor="@android:color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/brand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brand_title"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/input_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:hint="@string/brand_name"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_background"
+            />
+
+        <Button
+            android:id="@+id/add_brand_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:text="@string/save_btn"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/brands_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/brand_layout"
+        android:padding="8dp"/>
+
+
+
+
+</RelativeLayout>

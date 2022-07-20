@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/button_background"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/buyer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="User name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/buyer_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_name"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:text="Phone number"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+
+        <TextView
+            android:id="@+id/buyer_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_phone_number"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:text="Email"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/buyer_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_email"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/buyer_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_address"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:text="Shop name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_shop"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/activate_buyer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="@string/activate_buyer"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/delete_buyer_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="@string/delete_buyer"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/fui_buttonShadow"
+                android:layout_below="@+id/buyer_shop"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.hiltiapp.hiltiadmin.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.hiltiapp.hiltiadmin.ui.orders.OrdersFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/navigation_bulk_orders"
+        android:name="com.hiltiapp.hiltiadmin.ui.bulkOrders.BulkOrdersFragment"
+        android:label="@string/title_bulk_orders"
+        tools:layout="@layout/fragment_bulk_orders" />
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.hiltiapp.hiltiadmin.ui.users.UsersFragment"
+        android:label="@string/title_users"
+        tools:layout="@layout/fragment_users" />
+
+</navigation>

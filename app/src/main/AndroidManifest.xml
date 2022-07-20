@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hiltiapp.hiltiadmin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SliderImagesActivity"></activity>
+        <activity android:name=".BulkCartListActivity" />
+        <activity android:name=".UserCartListActivity" />
+
+        <activity android:name=".Devices.AddNewDeviceCategoryActivity"/>
+        <activity android:name=".Devices.DeviceCategoriesActivity"/>
+        <activity android:name=".Devices.UpdateDeviceProductActivity"/>
+        <activity android:name=".Devices.AddNewDeviceProductActivity"/>
+        <activity android:name=".Devices.DeviceProductsActivity"/>
+        <activity android:name=".Screens.UpdateScreenProductActivity" />
+        <activity android:name=".WoodDesigns.AddNewWoodProductActivity" />
+        <activity android:name=".WoodDesigns.WoodProductsActivity" />
+        <activity android:name=".WoodDesigns.AddNewWoodCategoryActivity" />
+        <activity android:name=".WoodDesigns.WoodCategoriesActivity" />
+        <activity android:name=".Screens.ScreenModelsActivity" />
+        <activity android:name=".Screens.ScreenBrandsActivity" />
+        <activity android:name=".Screens.AddNewScreenActivity" />
+        <activity android:name=".Screens.ScreensProductsActivity" />
+        <activity android:name=".Skins.SkinsProductsActivity" />
+        <activity android:name=".Skins.AddNewSkinActivity" />
+        <activity android:name=".Skins.UpdateSkinProductActivity"/>
+        <activity android:name=".WoodDesigns.UpdateWoodProductActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

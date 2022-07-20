@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/slider_images_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="Slider Images"
+        android:textColor="@android:color/black"
+        />
+
+
+    <ImageView
+        android:id="@+id/add_slider_image"
+        tools:ignore="ContentDescription,MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/slider_images_title"
+        android:src="@drawable/ic_baseline_insert_photo_24"
+        />
+
+    <Button
+        android:id="@+id/save_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="@string/add_image"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/add_slider_image"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slider_images_list"
+        android:layout_below="@+id/save_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" />
+
+
+
+</RelativeLayout>

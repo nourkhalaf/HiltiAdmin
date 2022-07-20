@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Skins.AddNewSkinActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/add_new_wood_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="@string/add_new_category_title"
+        />
+    <ImageView
+        android:id="@+id/add_new_wood_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/add_new_wood_category_title"
+        android:src="@drawable/ic_baseline_insert_photo_24"/>
+    <EditText
+        android:id="@+id/add_new_wood_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:layout_below="@+id/add_new_wood_category_image"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/add_category_title"/>
+
+    <Button
+        android:id="@+id/save_new_wood_category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/black"
+        android:text="@string/add_category"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</RelativeLayout>
